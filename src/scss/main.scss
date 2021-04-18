@@ -40,7 +40,7 @@ body{
 
     &--blue{
         box-shadow: 0 4px 50px rgba(#326CFF, .5);
-        background: linear-gradient(to right, #26FFF2, #326CFF);
+        background: $gradient;
     }
 
     &--white{
@@ -61,3 +61,4 @@ body{
 @import "components/nav";
 @import "components/control";
 @import "components/banner";
+@import "components/section";
