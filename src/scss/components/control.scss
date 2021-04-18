@@ -5,9 +5,14 @@
         background: none;
         border: none;
         margin-right: 50px;
+        transition: color .2s linear;
 
         &:last-child{
             margin-right: 0;
+        }
+
+        &:hover{
+            color: #326CFF;
         }
     }
 }

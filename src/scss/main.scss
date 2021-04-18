@@ -37,16 +37,23 @@ body{
     font-size: 16px;
     color: #fff;
     padding: 15px 30px;
+    transition: transform .2s linear;
 
     &--blue{
         box-shadow: 0 4px 50px rgba(#326CFF, .5);
         background: $gradient;
+
     }
 
     &--white{
         background-color: #fff;
         color: #323232;
     }
+
+    &:hover{
+        transform: scale(1.1);
+    }
+
 
     & + .btn {
         margin-left: 30px;

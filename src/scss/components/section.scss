@@ -4,9 +4,11 @@
     }
 
     &__title{
+        display: inline-block;
         font-size: 28px;
         margin-bottom: 47px;
-        padding-left: 19px;
+        padding: 0 19px;
+
         color: #fff;
         position: relative;
 
@@ -25,10 +27,16 @@
             position: absolute;
             top: 0;
             left: 0;
-            height: 100%;
+            z-index: -1;
+            height: 30px;
             width: 8px;
             background: $gradient;
             border-radius: 50px;
+            transition: width .4s ease-in-out;
+        }
+
+        &:hover::before{
+            width: 100%;
         }
     }
 
