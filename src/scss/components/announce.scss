@@ -1,0 +1,30 @@
+.announce{
+    margin-top: 100px;
+    margin-bottom: 121px;
+    &__inner{
+        border-radius: 20px;
+        display: flex;
+        background: linear-gradient(to right, #0D1A73, #000000);
+        overflow: hidden;
+        text-decoration: none;
+    }
+
+    img{
+        width: 50%;
+    }
+
+    &__text-block{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    &__text{
+        font-size: 64px;
+        font-weight: 700;
+        color: #fff;
+    }
+}

@@ -1,0 +1,21 @@
+.offer{
+    margin-bottom: 121px;
+    &__inner{
+        background: url('../../images/offer/offer-bg.jpg') no-repeat;
+        background-size: cover;
+        padding: 71px 57px;
+        border-radius: 20px;
+        max-width: 1224px;
+
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &__title{
+        font-size: 64px;
+        font-weight: 700;
+    }
+}
