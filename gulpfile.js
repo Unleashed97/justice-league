@@ -102,12 +102,12 @@ const cleandist = () => {
 
 // Watch
 const watchFiles = () => {
-    watch('src/pug/pages/**/*.pug', pughtml);
+    watch('src/pug/**/*.pug', pughtml);
     watch('src/**/*.scss', styles);
     watch(['src/**/*.js', '!src/js/script.min.js'], scripts);
     watch('src/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}', images)
     watch('src/fonts/**/*.{eot,woff,woff2,ttf,svg}', fonts);
-    watch('src/**/*.html').on('change', sync.reload);
+    watch('dist/**/*.html').on('change', sync.reload);
 }
 
 const build = series(cleandist, parallel(pughtml, styles, scripts, images, fonts));
