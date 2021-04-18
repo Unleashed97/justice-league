@@ -1,0 +1,23 @@
+// reset
+@import 'vendor/reset';
+// fonts
+@import 'vendor/fonts';
+// vars
+@import 'vars';
+
+html{
+
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 15px;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+// Components
