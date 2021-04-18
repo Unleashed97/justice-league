@@ -1,0 +1,19 @@
+.footer{
+    background-color: #101012;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        padding: 70px 0;
+    }
+
+    &__col{
+        flex: 0 0 19%;
+    }
+
+    &__link{
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 2;
+        color: #C2C2C2;
+    }
+}
