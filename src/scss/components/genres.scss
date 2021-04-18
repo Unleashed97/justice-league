@@ -1,0 +1,58 @@
+.genres{
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__item{
+        flex: 0 0 24%;
+        border-radius: 20px;
+        padding: 45px 0;
+        text-align: center;
+        margin-bottom: 27px;
+        
+        a{
+            text-decoration: none;
+        }
+
+        img{
+            margin: 0 auto;
+            margin-bottom: 8px;
+        }
+
+        &--romance{
+            background: linear-gradient(109.31deg, #FD093F 2.4%, #F383F1 100%);
+        }
+        &--drama{
+            background: linear-gradient(114.5deg, #0FFFDA 2.22%, #3CDB77 68.84%);
+        }
+        &--historical{
+            background: linear-gradient(109.31deg, #B936FF 2.4%, #57DEDA 100%);
+        }
+        &--action{
+            background: linear-gradient(109.31deg, #FD093F 2.4%, #FB1378 2.41%, #FCCB1A 100%);
+        }
+        &--sci-fi{
+            background: linear-gradient(109.31deg, #FF6472 2.4%, #FDA75D 100%);
+            img{
+                transform: rotate(45deg);
+            }
+        }
+        &--horror{
+            background: linear-gradient(110.16deg, #13547A 2.37%, #80D0C7 96.77%);
+        }
+        &--comedy{
+            background: linear-gradient(109.93deg, #FFF77B 2.37%, #FFBF42 50%);
+        }
+        &--documentary{
+            background: linear-gradient(109.31deg, #1FA2FF 2.4%, #1FA2FF 2.41%, #1F535C 97.46%);
+        }
+    }
+
+    &__item-title{
+        font-size: 28px;
+        font-weight: 700;
+        color: #fff;
+    }
+}
