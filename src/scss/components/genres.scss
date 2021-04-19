@@ -68,19 +68,26 @@
             // justify-content: flex-start;
         }
         &__item{
-            flex: 0 0 32%;
+            flex-basis: 48%;
         }
     }
 
     @media(max-width: $tablet){
-        &__item{
-            flex-basis: 48%;
+        &__item-title{
+            font-size: 20px;
         }
     }
 
     @media(max-width: $mobile){
         &__item{
             flex-basis: 100%;
+        }
+
+        &__link{
+            padding: 25px 0;
+        }
+        &__item-title{
+            font-size: 16px;
         }
     }
 }
