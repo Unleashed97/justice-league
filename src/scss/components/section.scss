@@ -8,6 +8,7 @@
         font-size: 28px;
         margin-bottom: 47px;
         padding: 0 19px;
+        // white-space: nowrap;
 
         color: #fff;
         position: relative;
@@ -28,7 +29,7 @@
             top: 0;
             left: 0;
             z-index: -1;
-            height: 30px;
+            height: 100%;
             width: 8px;
             background: $gradient;
             border-radius: 50px;
@@ -46,16 +47,20 @@
 
     &__list{
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     &__item{
         border-radius: 20px;
-        margin-right: 41px;
         overflow: hidden;
+        margin-bottom: 41px;
+        margin-right: 41px;
+        // flex: 0 0 24%;
         transition: box-shadow .2s linear;
-        &:last-child{
-            margin-right: 0;
-        }
+        // &:last-child{
+        //     margin-right: 0;
+        // }
 
         img{
             display: block;
@@ -72,5 +77,31 @@
             }
         }
     }
-    
+    // MEDIA
+    @media (max-width: $laptop){
+        &__item{
+            // flex: 0 0 32%;
+        }
+
+        &__title{
+            font-size: 25px;
+        }
+    }
+
+    @media (max-width: $tablet){
+        &__item{
+            // flex-basis: 48%;
+        }
+
+        &__title{
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: $mobile){
+        &__list{
+            justify-content: center;
+        }
+
+    }
 }

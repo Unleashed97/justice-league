@@ -61,4 +61,26 @@
         font-weight: 700;
         color: #fff;
     }
+
+    // MEDIA
+    @media(max-width: $laptop){
+        &__list{
+            // justify-content: flex-start;
+        }
+        &__item{
+            flex: 0 0 32%;
+        }
+    }
+
+    @media(max-width: $tablet){
+        &__item{
+            flex-basis: 48%;
+        }
+    }
+
+    @media(max-width: $mobile){
+        &__item{
+            flex-basis: 100%;
+        }
+    }
 }

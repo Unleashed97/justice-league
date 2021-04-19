@@ -37,6 +37,7 @@ body{
     font-size: 16px;
     color: #fff;
     padding: 15px 30px;
+    // white-space: nowrap;
     transition: transform .2s linear;
 
     &--blue{
@@ -62,6 +63,11 @@ body{
     & > i {
         margin-right: 15px;
     }
+    // MEDIA
+    // @media(max-width: $mobile){
+    //     font-size: 12px;
+    //     padding: 5px 8px;
+    // }
 }
 // Components
 @import "components/header";

@@ -18,4 +18,35 @@
         font-size: 64px;
         font-weight: 700;
     }
+
+    // MEDIA
+    @media(max-width: $laptop){
+        &__title{
+            font-size: 50px;
+        }
+    }
+
+    @media(max-width: $tablet){
+        margin-bottom: 60px;
+        &__inner{
+            flex-wrap: wrap;
+            padding: 50px 15px;
+        }
+        &__title{
+            font-size: 35px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    @media(max-width: $mobile){
+        &__inner{
+            padding: 20px 15px;
+            
+        }
+
+        &__title{
+            font-size: 20px;
+        }
+    }
 }

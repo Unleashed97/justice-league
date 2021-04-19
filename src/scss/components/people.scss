@@ -1,6 +1,7 @@
 .people{
     &__list{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 
@@ -9,6 +10,8 @@
         font-weight: 700;
         color: #fff;
         text-align: center;
+        flex: 0 0 24%;
+        margin-bottom: 40px;
         a{
             color: inherit;
             text-decoration: none;
@@ -26,6 +29,26 @@
             img{
                 filter: brightness(1);
             }
+        }
+    }
+
+    // MEDIA
+    @media (max-width: $laptop){
+        &__person{
+            flex: 0 0 32%;
+        }
+    }
+
+    @media (max-width: $tablet){
+        &__person{
+            font-size: 16px;
+            flex: 0 0 48%;
+        }
+    }
+
+    @media (max-width: $mobile){
+        &__person{
+            flex-basis: 100%;
         }
     }
 }

@@ -4,19 +4,20 @@ block content
     .banner
         .container 
             .banner__inner
-                .banner__text-block
-                    h1.banner__title Zack Snyder's Justice League
-                    .banner-info
-                        span.banner-info__year 2021
-                        span.banner-info__age 18+
-                        span.banner-info__time 4h 2min
-                        span.banner-info__rating 8.8
-                            <i class="fas fa-star"></i>
-                    p.banner__text Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions.
-                    .banner__btns
-                        button.btn.btn--blue 
-                            <i class="fas fa-play"></i> Watch
-                        button.btn.btn--white More information
+                .banner__text-block-wrapper
+                    .banner__text-block
+                        h1.banner__title Zack Snyder's Justice League
+                        .banner-info
+                            span.banner-info__year 2021
+                            span.banner-info__age 18+
+                            span.banner-info__time 4h 2min
+                            span.banner-info__rating 8.8
+                                <i class="fas fa-star"></i>
+                        p.banner__text Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions.
+                        .banner__btns
+                            button.btn.btn--blue 
+                                <i class="fas fa-play"></i> Watch
+                            button.btn.btn--white More information
 
     //- TV shows
     section.section
@@ -163,7 +164,7 @@ block content
     .announce 
         .container
             a(href="#").announce__inner 
-                img(src="images/announcement/img.jpg", alt="Annoucement")
+                img(src="images/announcement/img.jpg", alt="Annoucement").announce__image-block
                 .announce__text-block
                     img(src="images/announcement/icon.png", alt="2021")
                     p.announce__text Coming Soon
