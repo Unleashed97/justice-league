@@ -10,7 +10,7 @@
   <body> 
     <header class="header">
       <div class="container">
-        <div class="header__inner"><a class="logo"><img src="images/logo/icon.svg" alt="logo"></a>
+        <div class="header__inner"><a class="header__logo"><img src="images/logo/icon.svg" alt="logo"></a>
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item"><a class="nav__link active" href="#">Home </a></li>
@@ -19,15 +19,21 @@
               <li class="nav__item"><a class="nav__link" href="#">Series </a></li>
             </ul>
           </nav>
-          <ul class="control">
-            <li class="control__item">
-              <button class="control__item" href="#"><i class="fas fa-search"></i></button>
-              <button class="control__item" href="#">
-                 <i class="fas fa-bell"></i></button>
-              <button class="control__item" href="#">
-                 <i class="fas fa-user"></i></button>
-            </li>
-          </ul>
+          <div class="control"> 
+            <ul class="control__list">
+              <li class="control__item control__item-search">
+                <button class="control__item" href="#"><i class="fas fa-search"></i></button>
+              </li>
+              <li class="control__item control__item-notify">
+                <button class="control__item" href="#">
+                   <i class="fas fa-bell"></i></button>
+              </li>
+              <li class="control__item control__item-lk">
+                <button class="control__item" href="#">
+                   <i class="fas fa-user"></i></button>
+              </li>
+            </ul>
+          </div>
           <div class="burger"><span class="burger__item"> </span><span class="burger__item"> </span><span class="burger__item"> </span></div>
         </div>
       </div>

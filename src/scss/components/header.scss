@@ -4,10 +4,43 @@
         justify-content: space-between;
         align-items: center;
         padding: 15px 0;
+        position: relative;
     }
 
     // MEDIA
     @media (max-width: $tablet){
-        
+        transition: background .2s linear;
+        &__logo{
+            img{
+                width: 100px;
+            }
+        }
+
+        &.active{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 10;
+
+            opacity: 1;
+            background-color: $primary;
+            
+            .header__inner{
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                overflow: auto;
+            }
+
+            .header__logo{
+                position: absolute;
+                top: 15px;
+                left: 0;
+                z-index: 11;
+            }
+        }
     }
 }

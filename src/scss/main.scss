@@ -26,6 +26,10 @@ body{
 // container
 @import "components/container";
 
+// no-scroll
+.no-scroll{
+    position: fixed;
+}
 
 // buttons
 .btn{

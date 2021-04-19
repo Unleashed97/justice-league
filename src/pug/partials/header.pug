@@ -1,7 +1,7 @@
 header.header
     .container
         .header__inner
-            a.logo
+            a.header__logo
                 img(src="images/logo/icon.svg" alt="logo")
 
             nav.nav
@@ -15,14 +15,17 @@ header.header
                     li.nav__item
                         a.nav__link(href="#") Series 
             
-            ul.control
-                li.control__item
-                    button.control__item(href="#")
-                        <i class="fas fa-search"></i>
-                    button.control__item(href="#") 
-                        <i class="fas fa-bell"></i>
-                    button.control__item(href="#") 
-                        <i class="fas fa-user"></i>
+            .control 
+                ul.control__list
+                    li.control__item.control__item-search
+                        button.control__item(href="#")
+                            <i class="fas fa-search"></i>
+                    li.control__item.control__item-notify
+                        button.control__item(href="#") 
+                            <i class="fas fa-bell"></i>
+                    li.control__item.control__item-lk
+                        button.control__item(href="#") 
+                            <i class="fas fa-user"></i>
 
             .burger
                 span.burger__item 

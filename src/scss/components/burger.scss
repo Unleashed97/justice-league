@@ -1,5 +1,10 @@
 .burger{
     display: none;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    z-index: 11;
+
     width: 40px;
     height: 25px;
     cursor: pointer;

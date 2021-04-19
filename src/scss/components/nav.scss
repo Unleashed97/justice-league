@@ -47,8 +47,32 @@
             opacity: 1;
         }
     }
+
     // MEDIA
     @media (max-width: $tablet){
         display: none;
+        
+        &.active{
+            display: block;
+            margin-bottom: 40px;
+
+            .nav__list{
+                flex-direction: column;
+            }
+
+            .nav__item{
+                margin-bottom: 40px;
+                text-align: center;
+                margin-right: 0;
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+            .nav__link{
+                font-size: 35px;
+            }
+
+        }
     }
 }

@@ -1,4 +1,7 @@
 .control{
+    &__list{
+        display: flex;
+    }
     &__item{
         font-size: 16px;
         color: #fff;
@@ -19,5 +22,45 @@
     // MEDIA
     @media (max-width: $tablet){
         display: none;
+
+        &.active{
+            display: block;
+
+            .control__list{
+                flex-direction: column;
+            }
+
+            .control__item{
+                font-size: 30px;
+                margin-bottom: 40px;
+                color: rgba(#fff, .5);
+                font-weight: 700;
+                text-align: center;
+                margin-right: 0;
+                position: relative;
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+
+                &::after{
+                    display: inline-block;
+                    font-size: 30px;
+                    color: rgba(#fff, .5);
+                    font-weight: 700;
+                }
+
+                &-search::after{
+                    content: 'Search';
+                }
+                &-notify::after{
+                    content: 'Notifications';
+                }
+                &-lk::after{
+                    content: 'Sign in';
+                }
+            }
+
+        }
     }
 }
