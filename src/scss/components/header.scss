@@ -1,11 +1,20 @@
 .header{
     &__inner{
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        // right: 0;
+        // z-index: 1;
+
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 15px 0;
-        position: relative;
+        padding: 15px 20px;
     }
+
+    // &__content{
+    //     display: flex;
+    // }
 
     // MEDIA
     @media (max-width: $tablet){
@@ -38,7 +47,7 @@
             .header__logo{
                 position: absolute;
                 top: 15px;
-                left: 0;
+                left: 20px;
                 z-index: 11;
             }
         }

@@ -75,4 +75,12 @@
 
         }
     }
+
+    @media (min-width: 0) and (max-width: $mobile-landscape){
+        &.active{
+            .nav__link{
+                font-size: 20px;
+            }
+        }
+    }
 }

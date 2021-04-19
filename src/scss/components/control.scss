@@ -63,4 +63,16 @@
 
         }
     }
+
+    @media (min-width: 0) and (max-width: $mobile-landscape) {
+        &.active{
+            .control__item{
+                font-size: 20px;
+            }
+
+            .control__item::after{
+                font-size: 20px;
+            }
+        }
+    }
 }

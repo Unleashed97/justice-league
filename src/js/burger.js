@@ -5,6 +5,7 @@ const burger = ()=>{
     const control = document.querySelector('.control');
 
     burgerBtn.addEventListener('click', ()=>{
+        burgerBtn.classList.toggle('active');
         header.classList.toggle('active');
         nav.classList.toggle('active');
         control.classList.toggle('active');
