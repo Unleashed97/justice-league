@@ -48,7 +48,7 @@
     &__list{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     &__item{
@@ -89,6 +89,9 @@
     }
 
     @media (max-width: $tablet){
+        &__list{
+            justify-content: center;
+        }
         &__item{
             // flex-basis: 48%;
         }
@@ -99,9 +102,6 @@
     }
 
     @media (max-width: $mobile){
-        &__list{
-            justify-content: center;
-        }
-
+       
     }
 }

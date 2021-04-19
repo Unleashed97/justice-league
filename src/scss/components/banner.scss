@@ -10,6 +10,7 @@
 
     &__text-block-wrapper{
         max-width: 562px;
+        width: 50%;
         height: 100%;
         background-color: #000;
         box-shadow: 100px 0 100px #000;
@@ -19,6 +20,8 @@
         position: absolute;
         top: 10%;
         left: 0;
+        z-index: 1;
+        padding: 0 15px;
 
     }
 
@@ -77,28 +80,36 @@
     // MEDIA
     @media (max-width: $laptop){
         &__text-block-wrapper{
-            max-width: 460px;
+            max-width: 350px;
         }
 
         &__title{
             font-size: 60px;
         }
-    }
 
-    @media (max-width: $tablet){
-        &__text-block-wrapper{
-            max-width: 300px;
-        }
-
-        &__title{
-            font-size: 40px;
-        }
-
-        &__btns{
+        &__btns{    
             button:last-child{
                 margin-left: 0;
                 margin-top: 30px;
             }
+        }
+    }
+
+    @media (max-width: $tablet){
+        &__inner{
+            background: linear-gradient(rgba(#000, .5)), url('../images/banner/banner-bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &__text-block-wrapper{
+            width: 100%;
+            background: none;
+            box-shadow: none;
+        }
+
+        &__title{
+            font-size: 40px;
         }
     }
 }
