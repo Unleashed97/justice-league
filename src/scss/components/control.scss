@@ -15,4 +15,9 @@
             color: #326CFF;
         }
     }
+
+    // MEDIA
+    @media (max-width: $tablet){
+        display: none;
+    }
 }

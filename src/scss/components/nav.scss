@@ -47,4 +47,8 @@
             opacity: 1;
         }
     }
+    // MEDIA
+    @media (max-width: $tablet){
+        display: none;
+    }
 }
