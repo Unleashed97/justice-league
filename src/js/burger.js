@@ -11,7 +11,19 @@ const burger = ()=>{
         control.classList.toggle('active');
         document.body.classList.toggle('no-scroll');
     })
-
     
+    window.addEventListener('resize', ()=>{
+        if(window.screen.width > 768){
+            burgerBtn.classList.remove('active');
+            header.classList.remove('active');
+            nav.classList.remove('active');
+            control.classList.remove('active');
+            document.body.classList.remove('no-scroll');
+            
+            // burgerBtn.classList.remove('active');
+            // nav.classList.remove('active');
+            // document.body.classList.remove('no-scroll');
+        }
+    })
 }
 burger();
