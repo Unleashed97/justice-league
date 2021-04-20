@@ -81,6 +81,11 @@ body::-webkit-scrollbar-track{
 body::-webkit-scrollbar-thumb{
     background: $gradient;
     border-radius: 20px;
+    transition: background .2s linear;
+
+    &:hover{
+        background: $gradient-darken;
+    }
 }
 // Components
 @import "components/header";
