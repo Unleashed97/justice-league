@@ -35,7 +35,10 @@ body{
 }
 
 // links, buttons outline tab
-a:focus, button:focus-visible{
+a, button{
+    transition: box-shadow .2s linear;
+}
+a:focus-visible, button:focus-visible{
     outline: 0;
     box-shadow: 0 0 0 5px $primary, 0 0 0 10px $outline;
 }
@@ -50,8 +53,7 @@ a:focus, button:focus-visible{
     font-size: 16px;
     color: #fff;
     padding: 15px 30px;
-    // white-space: nowrap;
-    transition: transform .2s linear;
+    transition: transform .2s linear, box-shadow .2s linear;
 
     &--blue{
         box-shadow: 0 4px 50px rgba(#326CFF, .5);
@@ -64,16 +66,24 @@ a:focus, button:focus-visible{
         color: #323232;
     }
 
+    &--wi{
+        & > i {
+            margin-right: 15px;
+        }
+    }
+
+    &--empty{
+        padding: 0;
+        border-radius: 0;
+
+    }
+
     &:hover{
         transform: scale(1.1);
     }
 
     & + .btn {
         margin-left: 30px;
-    }
-
-    & > i {
-        margin-right: 15px;
     }
 }
 

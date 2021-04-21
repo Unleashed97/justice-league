@@ -3,11 +3,7 @@
         display: flex;
     }
     &__item{
-        font-size: 16px;
-        color: #fff;
-        background: none;
-        border: none;
-        margin-right: 50px;
+        margin-right: 75px;
         transition: color .2s linear;
 
         &:last-child{
