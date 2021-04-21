@@ -6,12 +6,6 @@
     z-index: 5;
     background-color: $primary;
     &__inner{
-        // position: absolute;
-        // top: 0;
-        // left: 0;
-        // right: 0;
-        // z-index: 1;
-
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -22,13 +16,8 @@
         display: block;
     }
 
-    // &__content{
-    //     display: flex;
-    // }
-
     // MEDIA
     @media (max-width: $tablet){
-        transition: background .2s linear;
         &__logo{
             img{
                 width: 100px;

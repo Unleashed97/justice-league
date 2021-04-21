@@ -4,14 +4,17 @@
     }
     &__item{
         margin-right: 75px;
-        transition: color .2s linear;
 
         &:last-child{
             margin-right: 0;
         }
 
-        &:hover{
-            color: #326CFF;
+        .btn{
+            transition: all .2s linear;
+        }
+
+        .btn:hover{
+            color: $outline;
         }
     }
 
@@ -29,7 +32,7 @@
             .control__item{
                 font-size: 30px;
                 margin-bottom: 40px;
-                color: rgba(#fff, .5);
+                
                 font-weight: 700;
                 text-align: center;
                 margin-right: 0;
@@ -46,15 +49,19 @@
                     font-weight: 700;
                 }
 
-                &-search::after{
+                &--search::after{
                     content: 'Search';
                 }
-                &-notify::after{
+                &--notify::after{
                     content: 'Notifications';
                 }
-                &-lk::after{
+                &--lk::after{
                     content: 'Sign in';
                 }
+            }
+
+            .btn{
+                color: rgba(#fff, .5);
             }
 
         }

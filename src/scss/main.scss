@@ -34,15 +34,6 @@ body{
     margin-top: 100px;
 }
 
-// links, buttons outline tab
-a, button{
-    transition: box-shadow .2s linear;
-}
-a:focus-visible, button:focus-visible{
-    outline: 0;
-    box-shadow: 0 0 0 5px $primary, 0 0 0 10px $outline;
-}
-
 // buttons
 .btn{
     background: transparent;
@@ -85,6 +76,20 @@ a:focus-visible, button:focus-visible{
     & + .btn {
         margin-left: 30px;
     }
+}
+
+// text selection 
+a::selection, p::selection{
+    color: #fff;
+}
+
+// links, buttons outline tab
+a, button{
+    transition: all .2s linear;
+}
+a:focus-visible, button:focus-visible{
+    outline: 0;
+    box-shadow: 0 0 0 5px $primary, 0 0 0 10px $outline;
 }
 
 // custom scroll 
