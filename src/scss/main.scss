@@ -15,6 +15,10 @@ body{
     font-size: 15px;
     background-color: $primary;
     color: #fff;
+
+    &.no-scroll{
+        overflow: hidden;
+    }
 }
 
 *,
@@ -26,9 +30,14 @@ body{
 // container
 @import "components/container";
 
-// no-scroll
-.no-scroll{
-    position: fixed;
+.main{
+    margin-top: 100px;
+}
+
+// links, buttons outline tab
+a:focus, button:focus-visible{
+    outline: 0;
+    box-shadow: 0 0 0 5px $primary, 0 0 0 10px $outline;
 }
 
 // buttons
@@ -58,7 +67,6 @@ body{
     &:hover{
         transform: scale(1.1);
     }
-
 
     & + .btn {
         margin-left: 30px;
@@ -99,3 +107,5 @@ body::-webkit-scrollbar-thumb{
 @import "components/announce";
 @import "components/offer";
 @import "components/footer";
+@import "components/sign-in";
+@import "components/form";

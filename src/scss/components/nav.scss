@@ -40,6 +40,11 @@
             text-shadow: 0 0 .9px #fff, 0 0 .9px #fff;
         }
 
+        &.active{
+            color: #fff;
+            text-shadow: 0 0 .9px #fff, 0 0 .9px #fff;
+        }
+
         &.active::after{
             opacity: 1;
         }

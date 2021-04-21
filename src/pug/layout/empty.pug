@@ -11,15 +11,8 @@ html(lang="en")
     body 
         //- page wrapper
         .wrapper
-            //- header
-            include ../partials/header.pug
-
-            .main 
-                //- page content
-                block content
-
-            //- footer
-            include ../partials/footer.pug
+            //- page content
+            block content
 
         //- JS scripts
         script(src="https://unpkg.com/aos@next/dist/aos.js")

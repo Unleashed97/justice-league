@@ -11,7 +11,7 @@ const burger = ()=>{
         control.classList.toggle('active');
         document.body.classList.toggle('no-scroll');
     })
-    
+
     window.addEventListener('resize', ()=>{
         if(window.screen.width > 768){
             burgerBtn.classList.remove('active');
@@ -19,11 +19,18 @@ const burger = ()=>{
             nav.classList.remove('active');
             control.classList.remove('active');
             document.body.classList.remove('no-scroll');
-            
-            // burgerBtn.classList.remove('active');
-            // nav.classList.remove('active');
-            // document.body.classList.remove('no-scroll');
         }
+    })
+
+    const navLinks = document.querySelectorAll('.nav__link');
+    navLinks.forEach(item =>{
+        item.addEventListener('click', ()=>{
+            burgerBtn.classList.remove('active');
+            header.classList.remove('active');
+            nav.classList.remove('active');
+            control.classList.remove('active');
+            document.body.classList.remove('no-scroll');
+        })
     })
 }
 burger();

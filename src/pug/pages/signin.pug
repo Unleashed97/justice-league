@@ -1,0 +1,31 @@
+extends ../layout/empty.pug
+
+block title
+    title Sign in
+
+block content
+    .sign-in
+        .container 
+            .sign-in__inner 
+                .sign-in__wrapper
+                    .sign-in__logo
+                        a(href="index.html")
+                            img(src="images/logo/icon.svg")
+                    form.form
+                        h1.form__title Sign In
+                        .form__group
+                            label.form__label 
+                                p.form__label-text Email:
+                                input(type="text", placeholder="Email").form__control
+                        .form__group
+                            label.form__label 
+                                p.form__label-text Password:
+                                input(type="text", placeholder="Password").form__control
+                        .form__footer 
+                            .form__group
+                                button.btn.btn--blue Sign In 
+                            ul.form__footer-list
+                                li
+                                    a(href="#") Forgotten password?
+                                li
+                                    a(href="#") Sign up

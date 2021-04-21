@@ -7,7 +7,10 @@
 
     width: 40px;
     height: 28px;
-    cursor: pointer;
+    
+    border:0;
+    background: transparent;
+    padding: 0;
 
     &__item{
         display: block;

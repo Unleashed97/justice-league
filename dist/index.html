@@ -6,189 +6,194 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.min.css">
+    <title>M-Box Online TV</title>
   </head>
   <body> 
-    <header class="header" data-aos="fade-down">
-      <div class="container">
-        <div class="header__inner"><a class="header__logo"><img src="images/logo/icon.svg" alt="logo"></a>
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item"><a class="nav__link active" href="#" data-target="#banner">Home </a></li>
-              <li class="nav__item"><a class="nav__link" href="#" data-target="#tv-shows">TV Shows</a></li>
-              <li class="nav__item"><a class="nav__link" href="#" data-target="#movies">Movies</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">Series </a></li>
-            </ul>
-          </nav>
-          <div class="control"> 
-            <ul class="control__list">
-              <li class="control__item control__item-search">
-                <button class="control__item" href="#"><i class="fas fa-search"></i></button>
-              </li>
-              <li class="control__item control__item-notify">
-                <button class="control__item" href="#">
-                   <i class="fas fa-bell"></i></button>
-              </li>
-              <li class="control__item control__item-lk">
-                <button class="control__item" href="#">
-                   <i class="fas fa-user"></i></button>
-              </li>
-            </ul>
+    <div class="wrapper">
+      <header class="header" data-aos="fade-down">
+        <div class="container">
+          <div class="header__inner"><a class="header__logo" href="#"><img src="images/logo/icon.svg" alt="logo"></a>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link active" href="#" data-target="#banner">Home </a></li>
+                <li class="nav__item"><a class="nav__link" href="#" data-target="#tv-shows">TV Shows</a></li>
+                <li class="nav__item"><a class="nav__link" href="#" data-target="#movies">Movies</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Series </a></li>
+              </ul>
+            </nav>
+            <div class="control"> 
+              <ul class="control__list">
+                <li class="control__item control__item-search">
+                  <button class="control__item" href="#"><i class="fas fa-search"></i></button>
+                </li>
+                <li class="control__item control__item-notify">
+                  <button class="control__item" href="#">
+                     <i class="fas fa-bell"></i></button>
+                </li>
+                <li class="control__item control__item-lk">
+                  <button class="control__item" href="#">
+                     <i class="fas fa-user"></i></button>
+                </li>
+              </ul>
+            </div>
+            <button class="burger"><span class="burger__item"> </span><span class="burger__item"> </span><span class="burger__item"> </span></button>
           </div>
-          <div class="burger"><span class="burger__item"> </span><span class="burger__item"> </span><span class="burger__item"> </span></div>
         </div>
-      </div>
-    </header>
-    <div class="banner" id="banner">
-      <div class="container"> 
-        <div class="banner__inner">
-          <div class="banner__text-block-wrapper">
-            <div class="banner__text-block" data-aos="fade-right">
-              <h1 class="banner__title">Zack Snyder's Justice League</h1>
-              <div class="banner-info"><span class="banner-info__year">2021</span><span class="banner-info__age">18+</span><span class="banner-info__time">4h 2min</span><span class="banner-info__rating">
-                  8.8<i class="fas fa-star"></i></span></div>
-              <p class="banner__text">Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions.</p>
-              <div class="banner__btns">
-                <button class="btn btn--blue">
-                   <i class="fas fa-play"></i> Watch</button>
-                <button class="btn btn--white">More information</button>
+      </header>
+      <div class="main"> 
+        <div class="banner" id="banner">
+          <div class="container"> 
+            <div class="banner__inner">
+              <div class="banner__text-block-wrapper">
+                <div class="banner__text-block" data-aos="fade-right">
+                  <h1 class="banner__title">Zack Snyder's Justice League</h1>
+                  <div class="banner-info"><span class="banner-info__year">2021</span><span class="banner-info__age">18+</span><span class="banner-info__time">4h 2min</span><span class="banner-info__rating">
+                      8.8<i class="fas fa-star"></i></span></div>
+                  <p class="banner__text">Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions.</p>
+                  <div class="banner__btns">
+                    <button class="btn btn--blue">
+                       <i class="fas fa-play"></i> Watch</button>
+                    <button class="btn btn--white">More information</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <section class="section" id="tv-shows">
-      <div class="container">
-        <div class="section__inner"> 
-          <h2 class="section__title" data-aos="slide-left"><a href="#">
-              Trending TV Shows<i class="fal fa-chevron-right"></i></a></h2>
-          <div class="section__content">
-            <ul class="section__list">
-              <li class="section__item" data-aos="fade-up" data-aos-delay="100"><a class="section__link" href="#"><img src="images/shows/1.jpg"></a></li>
-              <li class="section__item" data-aos="fade-up" data-aos-delay="200"><a class="section__link" href="#"><img src="images/shows/2.jpg"></a></li>
-              <li class="section__item" data-aos="fade-up" data-aos-delay="300"><a class="section__link" href="#"><img src="images/shows/3.jpg"></a></li>
-              <li class="section__item" data-aos="fade-up" data-aos-delay="400"><a class="section__link" href="#"><img src="images/shows/4.jpg"></a></li>
-              <li class="section__item" data-aos="fade-up" data-aos-delay="500"><a class="section__link" href="#"><img src="images/shows/5.jpg"></a></li>
-              <li class="section__item" data-aos="fade-up" data-aos-delay="600"><a class="section__link" href="#"><img src="images/shows/6.jpg"></a></li>
-            </ul>
+        <section class="section" id="tv-shows">
+          <div class="container">
+            <div class="section__inner"> 
+              <h2 class="section__title" data-aos="slide-left"><a href="#">
+                  Trending TV Shows<i class="fal fa-chevron-right"></i></a></h2>
+              <div class="section__content">
+                <ul class="section__list">
+                  <li class="section__item" data-aos="fade-up" data-aos-delay="100"><a class="section__link" href="#"><img src="images/shows/1.jpg"></a></li>
+                  <li class="section__item" data-aos="fade-up" data-aos-delay="200"><a class="section__link" href="#"><img src="images/shows/2.jpg"></a></li>
+                  <li class="section__item" data-aos="fade-up" data-aos-delay="300"><a class="section__link" href="#"><img src="images/shows/3.jpg"></a></li>
+                  <li class="section__item" data-aos="fade-up" data-aos-delay="400"><a class="section__link" href="#"><img src="images/shows/4.jpg"></a></li>
+                  <li class="section__item" data-aos="fade-up" data-aos-delay="500"><a class="section__link" href="#"><img src="images/shows/5.jpg"></a></li>
+                  <li class="section__item" data-aos="fade-up" data-aos-delay="600"><a class="section__link" href="#"><img src="images/shows/6.jpg"></a></li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="section" id="movies">
-      <div class="container">
-        <div class="section__inner"> 
-          <h2 class="section__title" data-aos="slide-left"><a href="#">
-              Trending Movies <i class="fal fa-chevron-right"></i></a></h2>
-          <div class="section__content">
-            <ul class="section__list">
-              <li class="section__item" data-aos="fade-up" data-aos-delay="100"><a class="section__link" href="#"><img src="images/movies/1.jpg"></a></li>
-              <li class="section__item" data-aos="fade-up" data-aos-delay="200"><a class="section__link" href="#"><img src="images/movies/2.jpg"></a></li>
-              <li class="section__item" data-aos="fade-up" data-aos-delay="300"><a class="section__link" href="#"><img src="images/movies/3.jpg"></a></li>
-              <li class="section__item" data-aos="fade-up" data-aos-delay="400"><a class="section__link" href="#"><img src="images/movies/4.jpg"></a></li>
-              <li class="section__item" data-aos="fade-up" data-aos-delay="500"><a class="section__link" href="#"><img src="images/movies/5.jpg"></a></li>
-              <li class="section__item" data-aos="fade-up" data-aos-delay="600"><a class="section__link" href="#"><img src="images/movies/6.jpg"></a></li>
-            </ul>
+        </section>
+        <section class="section" id="movies">
+          <div class="container">
+            <div class="section__inner"> 
+              <h2 class="section__title" data-aos="slide-left"><a href="#">
+                  Trending Movies <i class="fal fa-chevron-right"></i></a></h2>
+              <div class="section__content">
+                <ul class="section__list">
+                  <li class="section__item" data-aos="fade-up" data-aos-delay="100"><a class="section__link" href="#"><img src="images/movies/1.jpg"></a></li>
+                  <li class="section__item" data-aos="fade-up" data-aos-delay="200"><a class="section__link" href="#"><img src="images/movies/2.jpg"></a></li>
+                  <li class="section__item" data-aos="fade-up" data-aos-delay="300"><a class="section__link" href="#"><img src="images/movies/3.jpg"></a></li>
+                  <li class="section__item" data-aos="fade-up" data-aos-delay="400"><a class="section__link" href="#"><img src="images/movies/4.jpg"></a></li>
+                  <li class="section__item" data-aos="fade-up" data-aos-delay="500"><a class="section__link" href="#"><img src="images/movies/5.jpg"></a></li>
+                  <li class="section__item" data-aos="fade-up" data-aos-delay="600"><a class="section__link" href="#"><img src="images/movies/6.jpg"></a></li>
+                </ul>
+              </div>
+              <button class="btn btn--blue">See more</button>
+            </div>
           </div>
-          <button class="btn btn--blue">See more</button>
+        </section>
+        <section class="section">
+          <div class="container">
+            <div class="section__inner"> 
+              <h2 class="section__title" data-aos="slide-left"><a href="#">
+                  Popular Genres<i class="fal fa-chevron-right"></i></a></h2>
+              <div class="section__content">
+                <div class="genres">
+                  <ul class="genres__list">
+                    <li class="genres__item genres__item--romance" data-aos="zoom-in" data-aos-delay="100"><a href="#"><img src="images/genres/icons/hearts.svg">
+                        <h3 class="genres__item-title">Romance</h3></a></li>
+                    <li class="genres__item genres__item--drama" data-aos="zoom-in" data-aos-delay="200"><a href="#"><img src="images/genres/icons/cinema.svg">
+                        <h3 class="genres__item-title">Drama</h3></a></li>
+                    <li class="genres__item genres__item--historical" data-aos="zoom-in" data-aos-delay="300"><a href="#"><img src="images/genres/icons/documentary.svg">
+                        <h3 class="genres__item-title">Historical</h3></a></li>
+                    <li class="genres__item genres__item--action" data-aos="zoom-in" data-aos-delay="400"><a href="#"><img src="images/genres/icons/killer.svg">
+                        <h3 class="genres__item-title">Action</h3></a></li>
+                    <li class="genres__item genres__item--sci-fi" data-aos="zoom-in" data-aos-delay="500"><a href="#"><img src="images/genres/icons/rocket.svg">
+                        <h3 class="genres__item-title">Sci-fi</h3></a></li>
+                    <li class="genres__item genres__item--horror" data-aos="zoom-in" data-aos-delay="600"><a href="#"><img src="images/genres/icons/ghost.svg">
+                        <h3 class="genres__item-title">Horror</h3></a></li>
+                    <li class="genres__item genres__item--comedy" data-aos="zoom-in" data-aos-delay="700"><a href="#"><img src="images/genres/icons/smile.svg">
+                        <h3 class="genres__item-title">Comedy</h3></a></li>
+                    <li class="genres__item genres__item--documentary" data-aos="zoom-in" data-aos-delay="800"><a href="#"><img src="images/genres/icons/castle.svg">
+                        <h3 class="genres__item-title">Documentary</h3></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container">
+            <div class="section__inner"> 
+              <h2 class="section__title" data-aos="slide-left"><a href="#">
+                  Popular Actors & Directors<i class="fal fa-chevron-right"></i></a></h2>
+              <div class="section__content" data-aos="slide-left">
+                <div class="people">
+                  <ul class="people__list">
+                    <li class="people__person"><a href="#"><img src="images/people/1.jpg">
+                        <p class="people__person-name">Samantha Bowen</p></a></li>
+                    <li class="people__person"><a href="#"><img src="images/people/2.jpg">
+                        <p class="people__person-name">Rhys Birch</p></a></li>
+                    <li class="people__person"><a href="#"><img src="images/people/3.jpg">
+                        <p class="people__person-name">James Holloway</p></a></li>
+                    <li class="people__person"><a href="#"><img src="images/people/4.jpg">
+                        <p class="people__person-name">Joshua Walton</p></a></li>
+                    <li class="people__person"><a href="#"><img src="images/people/5.jpg">
+                        <p class="people__person-name">Patrick Elliott</p></a></li>
+                    <li class="people__person"><a href="#"><img src="images/people/6.jpg">
+                        <p class="people__person-name">Morgan O'Neill</p></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="announce" data-aos="fade-down">
+          <div class="container"><a class="announce__inner" href="#"> <img class="announce__image-block" src="images/announcement/img.jpg" alt="Annoucement">
+              <div class="announce__text-block"><img src="images/announcement/icon.png" alt="2021">
+                <p class="announce__text">Coming Soon</p>
+              </div></a></div>
         </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <div class="section__inner"> 
-          <h2 class="section__title" data-aos="slide-left"><a href="#">
-              Popular Genres<i class="fal fa-chevron-right"></i></a></h2>
-          <div class="section__content">
-            <div class="genres">
-              <ul class="genres__list">
-                <li class="genres__item genres__item--romance" data-aos="zoom-in" data-aos-delay="100"><a href="#"><img src="images/genres/icons/hearts.svg">
-                    <h3 class="genres__item-title">Romance</h3></a></li>
-                <li class="genres__item genres__item--drama" data-aos="zoom-in" data-aos-delay="200"><a href="#"><img src="images/genres/icons/cinema.svg">
-                    <h3 class="genres__item-title">Drama</h3></a></li>
-                <li class="genres__item genres__item--historical" data-aos="zoom-in" data-aos-delay="300"><a href="#"><img src="images/genres/icons/documentary.svg">
-                    <h3 class="genres__item-title">Historical</h3></a></li>
-                <li class="genres__item genres__item--action" data-aos="zoom-in" data-aos-delay="400"><a href="#"><img src="images/genres/icons/killer.svg">
-                    <h3 class="genres__item-title">Action</h3></a></li>
-                <li class="genres__item genres__item--sci-fi" data-aos="zoom-in" data-aos-delay="500"><a href="#"><img src="images/genres/icons/rocket.svg">
-                    <h3 class="genres__item-title">Sci-fi</h3></a></li>
-                <li class="genres__item genres__item--horror" data-aos="zoom-in" data-aos-delay="600"><a href="#"><img src="images/genres/icons/ghost.svg">
-                    <h3 class="genres__item-title">Horror</h3></a></li>
-                <li class="genres__item genres__item--comedy" data-aos="zoom-in" data-aos-delay="700"><a href="#"><img src="images/genres/icons/smile.svg">
-                    <h3 class="genres__item-title">Comedy</h3></a></li>
-                <li class="genres__item genres__item--documentary" data-aos="zoom-in" data-aos-delay="800"><a href="#"><img src="images/genres/icons/castle.svg">
-                    <h3 class="genres__item-title">Documentary</h3></a></li>
-              </ul>
+        <div class="offer" data-aos="fade-up">
+          <div class="container"> 
+            <div class="offer__inner"> 
+              <h2 class="offer__title">Are You New Here? <br/> Don’t wait, Register Now.</h2>
+              <button class="btn btn--blue">Register now</button>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <div class="section__inner"> 
-          <h2 class="section__title" data-aos="slide-left"><a href="#">
-              Popular Actors & Directors<i class="fal fa-chevron-right"></i></a></h2>
-          <div class="section__content" data-aos="slide-left">
-            <div class="people">
-              <ul class="people__list">
-                <li class="people__person"><a href="#"><img src="images/people/1.jpg">
-                    <p class="people__person-name">Samantha Bowen</p></a></li>
-                <li class="people__person"><a href="#"><img src="images/people/2.jpg">
-                    <p class="people__person-name">Rhys Birch</p></a></li>
-                <li class="people__person"><a href="#"><img src="images/people/3.jpg">
-                    <p class="people__person-name">James Holloway</p></a></li>
-                <li class="people__person"><a href="#"><img src="images/people/4.jpg">
-                    <p class="people__person-name">Joshua Walton</p></a></li>
-                <li class="people__person"><a href="#"><img src="images/people/5.jpg">
-                    <p class="people__person-name">Patrick Elliott</p></a></li>
-                <li class="people__person"><a href="#"><img src="images/people/6.jpg">
-                    <p class="people__person-name">Morgan O'Neill</p></a></li>
-              </ul>
-            </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__col"><a class="header__logo" href="#"><img src="images/logo/icon.svg" alt="logo"></a></div>
+            <div class="footer__col"><a class="footer__link" href="#">
+                <p>Voice over and Subtitle</p></a><a class="footer__link" href="#">
+                <p>Media Center</p></a><a class="footer__link" href="#">
+                <p>Privacy</p></a><a class="footer__link" href="#">
+                <p>Contact us</p></a></div>
+            <div class="footer__col"><a class="footer__link" href="#">
+                <p>Voice Description</p></a><a class="footer__link" href="#">
+                <p>Investor Relations</p></a><a class="footer__link" href="#">
+                <p>Legal Provisions</p></a></div>
+            <div class="footer__col"><a class="footer__link" href="#">
+                <p>Help Center</p></a><a class="footer__link" href="#">
+                <p>Job Opportunities</p></a><a class="footer__link" href="#">
+                <p>Cookies Preferences</p></a></div>
+            <div class="footer__col"><a class="footer__link" href="#">
+                <p>Gift Cards</p></a><a class="footer__link" href="#">
+                <p>Terms of Use</p></a><a class="footer__link" href="#">
+                <p>Corporate Informations</p></a></div>
           </div>
         </div>
-      </div>
-    </section>
-    <div class="announce" data-aos="fade-down">
-      <div class="container"><a class="announce__inner" href="#"> <img class="announce__image-block" src="images/announcement/img.jpg" alt="Annoucement">
-          <div class="announce__text-block"><img src="images/announcement/icon.png" alt="2021">
-            <p class="announce__text">Coming Soon</p>
-          </div></a></div>
-    </div>
-    <div class="offer" data-aos="fade-up">
-      <div class="container"> 
-        <div class="offer__inner"> 
-          <h2 class="offer__title">Are You New Here? <br/> Don’t wait, Register Now.</h2>
-          <button class="btn btn--blue">Register now</button>
-        </div>
-      </div>
+      </footer>
     </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/script.min.js"></script>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__inner">
-          <div class="footer__col"><a href="#"><img src="images/logo/icon.svg" alt="logo"></a></div>
-          <div class="footer__col"><a class="footer__link" href="#">
-              <p>Voice over and Subtitle</p></a><a class="footer__link" href="#">
-              <p>Media Center</p></a><a class="footer__link" href="#">
-              <p>Privacy</p></a><a class="footer__link" href="#">
-              <p>Contact us</p></a></div>
-          <div class="footer__col"><a class="footer__link" href="#">
-              <p>Voice Description</p></a><a class="footer__link" href="#">
-              <p>Investor Relations</p></a><a class="footer__link" href="#">
-              <p>Legal Provisions</p></a></div>
-          <div class="footer__col"><a class="footer__link" href="#">
-              <p>Help Center</p></a><a class="footer__link" href="#">
-              <p>Job Opportunities</p></a><a class="footer__link" href="#">
-              <p>Cookies Preferences</p></a></div>
-          <div class="footer__col"><a class="footer__link" href="#">
-              <p>Gift Cards</p></a><a class="footer__link" href="#">
-              <p>Terms of Use</p></a><a class="footer__link" href="#">
-              <p>Corporate Informations</p></a></div>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>

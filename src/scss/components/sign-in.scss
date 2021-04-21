@@ -1,0 +1,42 @@
+.sign-in{
+    &__inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        
+    }
+
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+
+    &__logo{
+        img{
+            min-width: 300px;
+        }
+        margin-right: 100px;
+    }
+
+    // MEDIA
+    @media (max-width: $tablet){
+        &__wrapper{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__logo{
+            text-align: center;
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 40px;
+
+            img{
+                min-width: 100px;
+            }
+        }
+    }
+}
